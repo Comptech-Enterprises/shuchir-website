@@ -2,25 +2,25 @@
 
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { RiLightbulbFlashLine, RiBroadcastLine, RiSeedlingLine } from 'react-icons/ri';
+import { FaBuilding, FaPenNib, FaChartLine } from 'react-icons/fa';
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
 const roles = [
   {
-    icon: RiLightbulbFlashLine,
+    icon: FaBuilding,
     title: 'Entrepreneur',
     description:
       'Building culture-first brands across food, beverage and marketing — from Food Talk India to Jade Forest to Anthem.',
   },
   {
-    icon: RiBroadcastLine,
+    icon: FaPenNib,
     title: 'Content Creator',
     description:
       'Demystifying the F&B world for millions — what India eats, drinks, and how the brands behind it all are built.',
   },
   {
-    icon: RiSeedlingLine,
+    icon: FaChartLine,
     title: 'Investor',
     description:
       'Backing bold founders building the next wave of consumer brands — culture-led, community-driven, category-defining.',

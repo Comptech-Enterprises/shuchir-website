@@ -2,8 +2,6 @@ import { Venture, TimelineItem, GalleryImage, ImpactStat, NavItem } from '@/type
 
 export const navItems: NavItem[] = [
   { label: 'About', href: '#about' },
-  { label: 'Featured', href: '#featured' },
-  { label: 'Brands', href: '#brands' },
   { label: 'Contact', href: '#contact' },
 ];
 

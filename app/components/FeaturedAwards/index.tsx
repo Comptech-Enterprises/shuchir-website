@@ -44,22 +44,24 @@ export default function FeaturedAwards() {
         </motion.div>
       </div>
 
-      <div className="site-container">
-        <div className="fa-grid">
-          {items.map((item, i) => (
-            <motion.div
-              key={item}
-              className="fa-item"
-              initial={{ opacity: 0, y: 20 }}
-              animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, ease, delay: 0.3 + i * 0.07 }}
-            >
-              <span className="font-heading fa-item-name">{item}</span>
-              <span className="fa-item-dot" />
-            </motion.div>
-          ))}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={inView ? { opacity: 1 } : {}}
+        transition={{ duration: 0.8, ease, delay: 0.4 }}
+      >
+        <div className="fa-ticker-wrap">
+          <div className="fa-fade fa-fade--left" />
+          <div className="fa-fade fa-fade--right" />
+          <div className="fa-track">
+            {[...items, ...items, ...items].map((item, i) => (
+              <span key={i} className="fa-group">
+                <span className="font-heading fa-item-name">{item}</span>
+                <span className="fa-item-dot" />
+              </span>
+            ))}
+          </div>
         </div>
-      </div>
+      </motion.div>
 
       <style>{`
         .fa-section {
@@ -104,66 +106,85 @@ export default function FeaturedAwards() {
           margin: 0;
         }
 
-        .fa-grid {
-          display: grid;
-          grid-template-columns: repeat(4, 1fr);
-          border-top: 1px solid rgba(200,161,90,0.15);
+        .fa-ticker-wrap {
+          position: relative;
+          border-top: 1px solid rgba(200,161,90,0.12);
+          border-bottom: 1px solid rgba(200,161,90,0.12);
+          padding: 1.75rem 0;
         }
 
-        .fa-item {
-          padding: clamp(1.75rem, 3.5vw, 2.75rem) 1.25rem;
-          border-bottom: 1px solid rgba(200,161,90,0.1);
-          border-right: 1px solid rgba(200,161,90,0.1);
-          text-align: center;
+        .fa-fade {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          width: 120px;
+          z-index: 2;
+          pointer-events: none;
+        }
+
+        .fa-fade--left {
+          left: 0;
+          background: linear-gradient(to right, #0A0A0A, transparent);
+        }
+
+        .fa-fade--right {
+          right: 0;
+          background: linear-gradient(to left, #0A0A0A, transparent);
+        }
+
+        @keyframes fa-scroll-left {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-33.33%); }
+        }
+
+        .fa-track {
           display: flex;
-          flex-direction: column;
           align-items: center;
-          gap: 0.75rem;
-          transition: background 0.4s;
+          white-space: nowrap;
+          width: max-content;
+          animation: fa-scroll-left 32s linear infinite;
         }
 
-        .fa-item:nth-child(4n) {
-          border-right: none;
+        .fa-track:hover {
+          animation-play-state: paused;
         }
 
-        .fa-item:hover {
-          background: rgba(200,161,90,0.04);
+        .fa-group {
+          display: inline-flex;
+          align-items: center;
+          gap: 2.5rem;
+          padding: 0 2.5rem;
         }
 
         .fa-item-name {
-          font-size: clamp(1.2rem, 2.2vw, 1.6rem);
+          font-size: clamp(1.3rem, 2.2vw, 1.75rem);
           font-weight: 600;
-          color: #E0E0E0;
-          letter-spacing: 0.01em;
+          color: #888;
+          letter-spacing: 0.02em;
           transition: color 0.3s;
         }
 
-        .fa-item:hover .fa-item-name {
+        .fa-item-name:hover {
           color: #C8A15A;
         }
 
         .fa-item-dot {
-          width: 5px;
-          height: 5px;
+          width: 6px;
+          height: 6px;
           border-radius: 50%;
           background: #C8A15A;
-          opacity: 0.4;
-          transition: opacity 0.3s;
+          display: inline-block;
+          flex-shrink: 0;
+          opacity: 0.3;
         }
 
-        .fa-item:hover .fa-item-dot {
-          opacity: 1;
-        }
-
-        @media (max-width: 900px) {
-          .fa-grid {
-            grid-template-columns: repeat(2, 1fr);
+        @media (max-width: 600px) {
+          .fa-group {
+            gap: 1.5rem;
+            padding: 0 1.5rem;
           }
-          .fa-item:nth-child(4n) {
-            border-right: 1px solid rgba(200,161,90,0.1);
-          }
-          .fa-item:nth-child(2n) {
-            border-right: none;
+          .fa-fade {
+            width: 50px;
           }
         }
       `}</style>

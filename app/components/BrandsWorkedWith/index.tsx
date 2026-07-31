@@ -5,8 +5,10 @@ import { motion, useInView } from 'framer-motion';
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
-const row1 = ['Diageo', 'Pernod Ricard', 'Zomato', 'Swiggy', 'AB InBev', 'Red Bull', 'Coca-Cola', 'Nestlé'];
-const row2 = ['ITC Hotels', 'Google', 'Bira 91', 'WeWork', 'Taj Hotels', 'Uber Eats', 'Bacardi', 'Samsung'];
+const row1 = [
+  'Diageo', 'Pernod Ricard', 'Zomato', 'Swiggy', 'AB InBev', 'Red Bull', 'Coca-Cola', 'Nestlé',
+  'ITC Hotels', 'Google', 'Bira 91', 'WeWork', 'Taj Hotels', 'Uber Eats', 'Bacardi', 'Samsung',
+];
 
 function TickerRow({ items, reverse = false }: { items: string[]; reverse?: boolean }) {
   const repeated = [...items, ...items, ...items];
@@ -60,7 +62,6 @@ export default function BrandsWorkedWith() {
         transition={{ duration: 0.8, ease, delay: 0.4 }}
       >
         <TickerRow items={row1} />
-        <TickerRow items={row2} reverse />
       </motion.div>
 
       <style>{`

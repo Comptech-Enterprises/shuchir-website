@@ -11,19 +11,19 @@ const roles = [
     icon: FaBuilding,
     title: 'Entrepreneur',
     description:
-      'Building culture-first brands across food, beverage and marketing — from Food Talk India to Jade Forest to Anthem.',
+      "I build businesses that sit at the intersection of culture, hospitality, media, and experiences. Whether it's launching a new venture, scaling a platform, or creating an IP from the ground up, I'm driven by the belief that the strongest businesses are built around communities, not just customers.",
   },
   {
     icon: FaPenNib,
     title: 'Content Creator',
     description:
-      'Demystifying the F&B world for millions — what India eats, drinks, and how the brands behind it all are built.',
+      "Content has always been my way of connecting people with experiences they'll remember. Whether it's food, drinks, travel or culture, I create stories that inspire curiosity, build trust and influence how people discover the world around them.",
   },
   {
     icon: FaChartLine,
     title: 'Investor',
     description:
-      'Backing bold founders building the next wave of consumer brands — culture-led, community-driven, category-defining.',
+      "I believe great businesses are built by exceptional founders. Having invested in 20+ companies, I work closely with entrepreneurs beyond just bringing in capital. I offer strategic thinking, brand-building experience and an operator's perspective to help ambitious ideas grow into enduring businesses.",
   },
 ];
 
@@ -72,8 +72,10 @@ export default function Expertise() {
             Builder by nature, creator by <span className="text-gradient" style={{ fontStyle: 'italic' }}>craft</span>.
           </h2>
         </motion.div>
+      </div>
 
-        {/* 3-column icon cards */}
+      {/* 3-column icon cards — wider than the header container */}
+      <div className="exp-grid-wrap">
         <div className="exp-grid">
           {roles.map((role, i) => {
             const Icon = role.icon;
@@ -143,15 +145,23 @@ export default function Expertise() {
         }
 
         /* ── Card grid ── */
+        .exp-grid-wrap {
+          width: 100%;
+          max-width: 1440px;
+          margin: 0 auto;
+          padding-left: clamp(1.5rem, 4vw, 3rem);
+          padding-right: clamp(1.5rem, 4vw, 3rem);
+        }
+
         .exp-grid {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
-          gap: clamp(2rem, 3vw, 3rem);
+          gap: clamp(1.5rem, 2.5vw, 2.5rem);
         }
 
         .exp-card {
           text-align: center;
-          padding: clamp(2.5rem, 4vw, 3.5rem) clamp(2rem, 3vw, 2.5rem);
+          padding: clamp(2.5rem, 4vw, 3.5rem) clamp(1.25rem, 2vw, 1.75rem);
           position: relative;
           border: 1px solid rgba(200,161,90,0.1);
           background: rgba(200,161,90,0.02);
@@ -249,7 +259,7 @@ export default function Expertise() {
           font-size: 1rem;
           line-height: 1.8;
           margin: 0;
-          max-width: 360px;
+          max-width: 100%;
           margin-left: auto;
           margin-right: auto;
           transition: color 0.4s ease;

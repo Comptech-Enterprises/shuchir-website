@@ -212,7 +212,7 @@ export default function Contact() {
                 margin: 0,
               }}
             >
-              Partnerships and
+              Let&apos;s create
             </motion.h2>
           </div>
           <div style={{ overflow: "hidden" }}>
@@ -230,7 +230,7 @@ export default function Contact() {
                 margin: 0,
               }}
             >
-              collaborations.
+              what&apos;s next.
             </motion.h2>
           </div>
         </div>
@@ -259,8 +259,9 @@ export default function Contact() {
                 lineHeight: 1.7,
               }}
             >
-              For brands and businesses exploring consulting, speaking engagements, collaborations, or
-              partnerships. Tell me what you have in mind and I&apos;ll get back to you shortly.
+              Whether you&apos;re looking to create a cultural moment, launch a brand, spark meaningful
+              conversations, or explore a long-term partnership, I&apos;d love to hear what you&apos;re
+              working on. Let&apos;s connect and build something people will remember.
             </p>
 
             {sent ? (

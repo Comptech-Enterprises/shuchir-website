@@ -2,25 +2,26 @@
 
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { FaBuilding, FaPenNib, FaChartLine } from 'react-icons/fa';
+import { FiTrendingUp } from 'react-icons/fi';
+import { FaUserTie, FaFilm } from 'react-icons/fa';
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
 const roles = [
   {
-    icon: FaBuilding,
+    icon: FaUserTie,
     title: 'Entrepreneur',
     description:
       "I build businesses that sit at the intersection of culture, hospitality, media, and experiences. Whether it's launching a new venture, scaling a platform, or creating an IP from the ground up, I'm driven by the belief that the strongest businesses are built around communities, not just customers.",
   },
   {
-    icon: FaPenNib,
+    icon: FaFilm,
     title: 'Content Creator',
     description:
       "Content has always been my way of connecting people with experiences they'll remember. Whether it's food, drinks, travel or culture, I create stories that inspire curiosity, build trust and influence how people discover the world around them.",
   },
   {
-    icon: FaChartLine,
+    icon: FiTrendingUp,
     title: 'Investor',
     description:
       "I believe great businesses are built by exceptional founders. Having invested in 20+ companies, I work closely with entrepreneurs beyond just bringing in capital. I offer strategic thinking, brand-building experience and an operator's perspective to help ambitious ideas grow into enduring businesses.",

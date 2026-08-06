@@ -1,21 +1,26 @@
 'use client';
 
-import { useRef } from 'react';
+import { useRef, type ComponentType } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { FiTrendingUp } from 'react-icons/fi';
-import { FaUserTie, FaFilm } from 'react-icons/fa';
+import EntrepreneurIcon from '../ui/EntrepreneurIcon';
+import ContentCreatorIcon from '../ui/ContentCreatorIcon';
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
-const roles = [
+const roles: {
+  icon: ComponentType<{ className?: string }>;
+  title: string;
+  description: string;
+}[] = [
   {
-    icon: FaUserTie,
+    icon: EntrepreneurIcon,
     title: 'Entrepreneur',
     description:
       "I build businesses that sit at the intersection of culture, hospitality, media, and experiences. Whether it's launching a new venture, scaling a platform, or creating an IP from the ground up, I'm driven by the belief that the strongest businesses are built around communities, not just customers.",
   },
   {
-    icon: FaFilm,
+    icon: ContentCreatorIcon,
     title: 'Content Creator',
     description:
       "Content has always been my way of connecting people with experiences they'll remember. Whether it's food, drinks, travel or culture, I create stories that inspire curiosity, build trust and influence how people discover the world around them.",
@@ -181,8 +186,8 @@ export default function Expertise() {
           top: 15%;
           left: 50%;
           transform: translateX(-50%);
-          width: 120px;
-          height: 120px;
+          width: 160px;
+          height: 160px;
           background: radial-gradient(circle, rgba(200,161,90,0.12) 0%, transparent 70%);
           opacity: 0;
           transition: opacity 0.6s ease;
@@ -195,14 +200,12 @@ export default function Expertise() {
 
         /* ── Icon ── */
         .exp-card__icon-wrap {
-          width: 5.5rem;
-          height: 5.5rem;
+          width: 7rem;
+          height: 7rem;
           margin: 0 auto 2rem;
           display: flex;
           align-items: center;
           justify-content: center;
-          border: 1px solid rgba(200,161,90,0.25);
-          background: rgba(200,161,90,0.04);
           color: #C8A15A;
           position: relative;
           z-index: 1;
@@ -210,15 +213,12 @@ export default function Expertise() {
         }
 
         .exp-card:hover .exp-card__icon-wrap {
-          background: rgba(200,161,90,0.12);
-          border-color: rgba(200,161,90,0.6);
           transform: translateY(-6px) scale(1.05);
-          box-shadow: 0 8px 30px rgba(200,161,90,0.15);
         }
 
         .exp-card__icon {
-          width: 34px;
-          height: 34px;
+          width: 72px;
+          height: 72px;
           transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
         }
 

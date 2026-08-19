@@ -259,9 +259,9 @@ export default function Contact() {
                 lineHeight: 1.7,
               }}
             >
-              Whether you&apos;re looking to create a cultural moment, launch a brand, spark meaningful
-              conversations, or explore a long-term partnership, I&apos;d love to hear what you&apos;re
-              working on. Let&apos;s connect and build something people will remember.
+              From brand campaigns to strategic partnerships, I collaborate with people
+              building interesting things. Tell me about your project, and my team will be in
+              touch soon!
             </p>
 
             {sent ? (
@@ -285,10 +285,16 @@ export default function Contact() {
               <form onSubmit={handleSubmit}>
 
                 <Field
-                  label="Your Name"
+                  label="Name"
                   value={form.name}
                   onChange={(v) => setForm({ ...form, name: v })}
                   placeholder="John Doe"
+                />
+                <Field
+                  label="Brand / Company"
+                  value={form.company}
+                  onChange={(v) => setForm({ ...form, company: v })}
+                  placeholder="Your brand or company"
                 />
                 <Field
                   label="Email Address"
@@ -298,24 +304,17 @@ export default function Contact() {
                   placeholder="you@example.com"
                 />
                 <Field
-                  label="Company"
-                  value={form.company}
-                  onChange={(v) => setForm({ ...form, company: v })}
-                  placeholder="Your company name"
-                />
-                <Field
-                  label="Mobile"
+                  label="Phone Number"
                   type="tel"
                   value={form.mobile}
                   onChange={(v) => setForm({ ...form, mobile: v })}
                   placeholder="+91 98765 43210"
                 />
                 <Field
-                  label="Details of your inquiry"
+                  label="Project"
                   value={form.message}
                   onChange={(v) => setForm({ ...form, message: v })}
-                  placeholder="Tell me about your brand and what you're looking for…"
-                  multiline
+                  placeholder="Describe the brief in 1 line"
                 />
 
                 {error && (

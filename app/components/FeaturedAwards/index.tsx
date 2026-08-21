@@ -6,14 +6,16 @@ import { motion, useInView } from 'framer-motion';
 const ease = [0.22, 1, 0.36, 1] as const;
 
 const items = [
-  'Forbes India',
-  '30 Under 30',
+  'Travel + Leisure',
+  'BUCS',
+  'Shows of India',
+  'WOW Awards Asia',
+  'Condé Nast Traveller India',
+  'The Hindu',
+  'MensXP',
+  "Harper's Bazaar India",
+  'Elle India',
   'YourStory',
-  'Top F&B Creator',
-  'Economic Times',
-  'Young Entrepreneur',
-  'Inc42',
-  'BW Disrupt',
 ];
 
 export default function FeaturedAwards() {

@@ -6,9 +6,9 @@ import { motion, useInView } from 'framer-motion';
 const ease = [0.22, 1, 0.36, 1] as const;
 
 const brands = [
-  'BMW', 'DLF', 'Diageo India', 'Pernod Ricard', 'RPSG Group',
-  'Beam Suntory', 'Starbucks', 'Isva Spices', 'Bacardi', 'Hong Kong Tourism Board',
-  'Bapuna', 'Google', 'ITC Hotel Group', 'Pizza Hut', 'Urban Company',
+  'BMW', 'DLF', 'Don Julio', 'Johnnie Walker', 'Tanqueray',
+  'Pernod Ricard', 'Beam Suntory', 'Starbucks', 'Isva Spices', 'Bacardi',
+  'Hong Kong Tourism Board', 'ITC Hotel Group', 'Urban Company',
   'Nespresso', 'Uniqlo', 'Lenskart', 'IHG Hotel & Resorts',
 ];
 

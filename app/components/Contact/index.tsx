@@ -259,9 +259,7 @@ export default function Contact() {
                 lineHeight: 1.7,
               }}
             >
-              From brand campaigns to strategic partnerships, I collaborate with people
-              building interesting things. Tell me about your project, and my team will be in
-              touch soon!
+              For brand campaigns, drop the details below and my team will get in touch.
             </p>
 
             {sent ? (
@@ -311,10 +309,11 @@ export default function Contact() {
                   placeholder="+91 98765 43210"
                 />
                 <Field
-                  label="Project"
+                  label="Message"
                   value={form.message}
                   onChange={(v) => setForm({ ...form, message: v })}
-                  placeholder="Describe the brief in 1 line"
+                  placeholder="Tell me about your project"
+                  multiline
                 />
 
                 {error && (

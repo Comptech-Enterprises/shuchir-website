@@ -5,11 +5,9 @@ import { motion, useInView } from 'framer-motion';
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
-const row1 = [
+const brands = [
   'BMW', 'DLF', 'Diageo India', 'Pernod Ricard', 'RPSG Group',
   'Beam Suntory', 'Starbucks', 'Isva Spices', 'Bacardi', 'Hong Kong Tourism Board',
-];
-const row2 = [
   'Bapuna', 'Google', 'ITC Hotel Group', 'Pizza Hut', 'Urban Company',
   'Nespresso', 'Uniqlo', 'Lenskart', 'IHG Hotel & Resorts',
 ];
@@ -65,8 +63,7 @@ export default function BrandsWorkedWith() {
         animate={inView ? { opacity: 1 } : {}}
         transition={{ duration: 0.8, ease, delay: 0.4 }}
       >
-        <TickerRow items={row1} />
-        <TickerRow items={row2} reverse />
+        <TickerRow items={brands} />
       </motion.div>
 
       <style>{`

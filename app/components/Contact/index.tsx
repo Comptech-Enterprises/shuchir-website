@@ -212,7 +212,7 @@ export default function Contact() {
                 margin: 0,
               }}
             >
-              Partnerships and
+              Let&apos;s create
             </motion.h2>
           </div>
           <div style={{ overflow: "hidden" }}>
@@ -230,14 +230,12 @@ export default function Contact() {
                 margin: 0,
               }}
             >
-              collaborations.
+              what&apos;s next.
             </motion.h2>
           </div>
         </div>
       </div>
 
-      {/* ── Marquee ── */}
-      <Marquee />
 
       {/* ── Two-column body ── */}
       <div className="site-container" style={{ position: "relative", zIndex: 1, paddingBottom: "6rem" }}>
@@ -261,8 +259,7 @@ export default function Contact() {
                 lineHeight: 1.7,
               }}
             >
-              For brands and businesses exploring consulting, speaking engagements, collaborations, or
-              partnerships. Tell me what you have in mind and I&apos;ll get back to you shortly.
+              For brand campaigns, drop the details below and my team will get in touch.
             </p>
 
             {sent ? (
@@ -284,54 +281,18 @@ export default function Contact() {
               </motion.div>
             ) : (
               <form onSubmit={handleSubmit}>
-                {/* Inquiry type selector */}
-                <div style={{ marginBottom: "1.75rem" }}>
-                  <label
-                    className="font-body"
-                    style={{
-                      display: "block",
-                      fontSize: "0.65rem",
-                      letterSpacing: "0.18em",
-                      textTransform: "uppercase",
-                      color: "#bbb",
-                      marginBottom: "0.75rem",
-                    }}
-                  >
-                    I&apos;m interested in
-                  </label>
-                  <div style={{ display: "flex", flexWrap: "wrap", gap: "0.6rem" }}>
-                    {inquiryTypes.map((type) => {
-                      const active = form.inquiryType === type;
-                      return (
-                        <button
-                          key={type}
-                          type="button"
-                          onClick={() => setForm({ ...form, inquiryType: type })}
-                          className="font-body"
-                          style={{
-                            fontSize: "0.75rem",
-                            letterSpacing: "0.06em",
-                            padding: "0.55rem 1.1rem",
-                            borderRadius: "999px",
-                            cursor: "pointer",
-                            transition: "all 0.3s",
-                            border: active ? "1px solid #C8A15A" : "1px solid rgba(255,255,255,0.25)",
-                            background: active ? "#C8A15A" : "transparent",
-                            color: active ? "#0E0E0E" : "#bbb",
-                          }}
-                        >
-                          {type}
-                        </button>
-                      );
-                    })}
-                  </div>
-                </div>
 
                 <Field
-                  label="Your Name"
+                  label="Name"
                   value={form.name}
                   onChange={(v) => setForm({ ...form, name: v })}
                   placeholder="John Doe"
+                />
+                <Field
+                  label="Brand / Company"
+                  value={form.company}
+                  onChange={(v) => setForm({ ...form, company: v })}
+                  placeholder="Your brand or company"
                 />
                 <Field
                   label="Email Address"
@@ -341,23 +302,17 @@ export default function Contact() {
                   placeholder="you@example.com"
                 />
                 <Field
-                  label="Company"
-                  value={form.company}
-                  onChange={(v) => setForm({ ...form, company: v })}
-                  placeholder="Your company name"
-                />
-                <Field
-                  label="Mobile"
+                  label="Phone Number"
                   type="tel"
                   value={form.mobile}
                   onChange={(v) => setForm({ ...form, mobile: v })}
                   placeholder="+91 98765 43210"
                 />
                 <Field
-                  label="Details of your inquiry"
+                  label="Message"
                   value={form.message}
                   onChange={(v) => setForm({ ...form, message: v })}
-                  placeholder="Tell me about your brand and what you're looking for…"
+                  placeholder="Tell me about your project"
                   multiline
                 />
 
@@ -500,7 +455,7 @@ export default function Contact() {
       </div>
 
       <style>{`
-        @media (max-width: 767px) {
+        @media (max-width: 900px) {
           .contact-cols { grid-template-columns: 1fr !important; gap: 3rem !important; }
           .send-btn { width: auto !important; font-size: 0.68rem !important; white-space: nowrap !important; padding: 0.75rem 1.25rem !important; letter-spacing: 0.08em !important; }
         }

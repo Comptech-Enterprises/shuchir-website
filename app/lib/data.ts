@@ -2,6 +2,7 @@ import { Venture, TimelineItem, GalleryImage, ImpactStat, NavItem } from '@/type
 
 export const navItems: NavItem[] = [
   { label: 'About', href: '#about' },
+  { label: 'Ventures', href: '#ventures' },
   { label: 'Contact', href: '#contact' },
 ];
 
@@ -16,6 +17,7 @@ export const ventures: Venture[] = [
       "From an invite-only community to one of India's largest digital food networks, reaching millions every month.",
     year: '2013',
     image: '/images/suchir.webp',
+    logo: '/logos/food-talk-india.webp',
     monogram: 'FT',
     website: '#',
     category: 'Community & Media',
@@ -44,6 +46,7 @@ export const ventures: Venture[] = [
       "A full-service marketing agency partnering with some of India's biggest brands, at home and abroad.",
     year: '2022',
     image: '/images/suchir.webp',
+    logo: '/logos/anthem.webp',
     monogram: 'AN',
     website: '#',
     category: 'Marketing Agency',

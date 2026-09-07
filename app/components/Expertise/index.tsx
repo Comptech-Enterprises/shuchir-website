@@ -75,7 +75,7 @@ export default function Expertise() {
             <span className="font-body exp-label">What I Do</span>
           </div>
           <h2 className="font-heading exp-heading">
-            Builder by nature, creator by <span className="text-gradient" style={{ fontStyle: 'italic' }}>craft</span>.
+            Builder by nature, creator by <span className="text-gradient">craft</span>.
           </h2>
         </motion.div>
       </div>

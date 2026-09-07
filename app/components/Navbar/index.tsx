@@ -125,33 +125,6 @@ export default function Navbar() {
               })}
             </ul>
 
-            {/* CTA */}
-            <button
-              onClick={() => handleNavClick('#contact')}
-              className="font-body nav-cta"
-              style={{
-                background: 'none',
-                border: '1px solid rgba(200,161,90,0.4)',
-                color: '#C8A15A',
-                fontSize: '0.8125rem',
-                letterSpacing: '0.06em',
-                padding: '0.625rem 1.5rem',
-                cursor: 'pointer',
-                flexShrink: 0,
-                transition: 'all 0.3s',
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.background = '#C8A15A';
-                e.currentTarget.style.color = '#0E0E0E';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.background = 'none';
-                e.currentTarget.style.color = '#C8A15A';
-              }}
-            >
-              Get in Touch
-            </button>
-
             {/* Mobile toggle */}
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
@@ -212,7 +185,6 @@ export default function Navbar() {
       <style>{`
         @media (max-width: 767px) {
           .nav-desktop { display: none !important; }
-          .nav-cta { display: none !important; }
           .nav-hamburger { display: flex !important; }
         }
         @media (min-width: 768px) {

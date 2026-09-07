@@ -224,7 +224,6 @@ export default function Contact() {
               style={{
                 fontSize: "clamp(3rem, 7vw, 6rem)",
                 fontWeight: 700,
-                fontStyle: "italic",
                 lineHeight: 1.1,
                 letterSpacing: "-0.02em",
                 margin: 0,

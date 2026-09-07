@@ -53,7 +53,7 @@ export default function BrandsWorkedWith() {
             <span className="font-body bw-label">Trusted By</span>
           </div>
           <h2 className="font-heading bw-heading">
-            Brands I've <span className="text-gradient" style={{ fontStyle: 'italic' }}>worked with</span>
+            Brands I've <span className="text-gradient">worked with</span>
           </h2>
         </motion.div>
       </div>

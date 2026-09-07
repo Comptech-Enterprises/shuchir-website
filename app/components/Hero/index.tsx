@@ -128,7 +128,6 @@ export default function Hero() {
                 style={{
                   fontSize: 'clamp(3rem, 7vw, 6.5rem)',
                   fontWeight: 700,
-                  fontStyle: 'italic',
                   lineHeight: 0.95,
                   letterSpacing: '-0.02em',
                   margin: 0,

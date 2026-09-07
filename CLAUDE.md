@@ -4,6 +4,16 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 @AGENTS.md
 
+## Branches — deployment targets
+
+- `development` — deploys to Vercel (preview/staging). Default branch for day-to-day work.
+- `main` — deploys to production, live at suchir.com (per `e218dc9`, Vercel only auto-deploys `development`; `main` ships via a separate production path).
+
+**Do not touch `main`** (no commits, merges, pushes, or rebases onto it) unless the user
+explicitly says: **"We will go for the development branch."** That phrase is the only
+trigger to act on `main`. Absent it, treat all work as `development`-only, regardless of
+how routine the change looks.
+
 ## Commands
 
 ```bash

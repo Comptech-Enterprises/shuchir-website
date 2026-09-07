@@ -41,7 +41,7 @@ export default function FeaturedAwards() {
             <span className="font-body fa-label">Recognition</span>
           </div>
           <h2 className="font-heading fa-heading">
-            Featured <span className="text-gradient" style={{ fontStyle: 'italic' }}>&</span> Awards
+            Featured <span className="text-gradient">&</span> Awards
           </h2>
         </motion.div>
       </div>

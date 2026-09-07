@@ -112,7 +112,6 @@ export default function About() {
                   className="font-heading"
                   style={{
                     fontSize: "1.1rem",
-                    fontStyle: "italic",
                     color: "#C8A15A",
                     opacity: 0.75,
                     marginBottom: "0.2rem",
@@ -171,7 +170,6 @@ export default function About() {
                   style={{
                     fontSize: "clamp(2rem, 3.5vw, 3rem)",
                     fontWeight: 700,
-                    fontStyle: "italic",
                     lineHeight: 1.1,
                     letterSpacing: "-0.02em",
                     margin: 0,

@@ -48,7 +48,10 @@ export default function FeaturedAwards() {
           <div className="fa-track">
             {[...items, ...items, ...items].map((item, i) => (
               <span key={i} className="fa-group">
-                <span className="font-heading fa-item-name">{item}</span>
+                <span className="fa-item">
+                  <span className="fa-item-photo" aria-hidden="true" />
+                  <span className="font-heading fa-item-name">{item}</span>
+                </span>
                 <span className="fa-item-dot" />
               </span>
             ))}
@@ -82,7 +85,7 @@ export default function FeaturedAwards() {
           position: relative;
           border-top: 1px solid rgba(200,161,90,0.12);
           border-bottom: 1px solid rgba(200,161,90,0.12);
-          padding: 1.75rem 0;
+          padding: 3rem 0;
         }
 
         .fa-fade {
@@ -112,9 +115,8 @@ export default function FeaturedAwards() {
         .fa-track {
           display: flex;
           align-items: center;
-          white-space: nowrap;
           width: max-content;
-          animation: fa-scroll-left 32s linear infinite;
+          animation: fa-scroll-left 48s linear infinite;
         }
 
         .fa-track:hover {
@@ -124,19 +126,41 @@ export default function FeaturedAwards() {
         .fa-group {
           display: inline-flex;
           align-items: center;
-          gap: 2.5rem;
-          padding: 0 2.5rem;
+          flex-shrink: 0;
+        }
+
+        .fa-item {
+          display: inline-flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 1.1rem;
+          padding: 0 1.25rem;
+        }
+
+        .fa-item-photo {
+          width: clamp(220px, 22vw, 320px);
+          aspect-ratio: 4 / 3;
+          border-radius: 12px;
+          background: linear-gradient(135deg, #141414, #1c1c1c);
+          border: 1px solid rgba(200,161,90,0.2);
+          flex-shrink: 0;
+          transition: border-color 0.3s;
+        }
+
+        .fa-item:hover .fa-item-photo {
+          border-color: rgba(200,161,90,0.6);
         }
 
         .fa-item-name {
-          font-size: clamp(1.3rem, 2.2vw, 1.75rem);
+          font-size: clamp(1.1rem, 1.8vw, 1.4rem);
           font-weight: 600;
           color: #888;
           letter-spacing: 0.02em;
+          white-space: nowrap;
           transition: color 0.3s;
         }
 
-        .fa-item-name:hover {
+        .fa-item:hover .fa-item-name {
           color: #C8A15A;
         }
 
@@ -148,12 +172,12 @@ export default function FeaturedAwards() {
           display: inline-block;
           flex-shrink: 0;
           opacity: 0.3;
+          align-self: center;
         }
 
         @media (max-width: 600px) {
-          .fa-group {
-            gap: 1.5rem;
-            padding: 0 1.5rem;
+          .fa-item {
+            padding: 0 0.85rem;
           }
           .fa-fade {
             width: 50px;

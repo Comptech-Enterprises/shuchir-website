@@ -31,15 +31,6 @@ export default function FeaturedAwards() {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.9, ease }}
         >
-          <div className="fa-label-row">
-            <motion.span
-              className="fa-line"
-              initial={{ width: 0 }}
-              animate={inView ? { width: '2.5rem' } : {}}
-              transition={{ duration: 0.8, ease, delay: 0.3 }}
-            />
-            <span className="font-body fa-label">Recognition</span>
-          </div>
           <h2 className="font-heading fa-heading">
             Featured <span className="text-gradient">&</span> Awards
           </h2>
@@ -76,27 +67,6 @@ export default function FeaturedAwards() {
         .fa-header {
           text-align: center;
           margin-bottom: clamp(2.5rem, 4vw, 3.5rem);
-        }
-
-        .fa-label-row {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          gap: 0.75rem;
-          margin-bottom: 1.5rem;
-        }
-
-        .fa-line {
-          height: 1px;
-          background: #C8A15A;
-          display: inline-block;
-        }
-
-        .fa-label {
-          font-size: 0.7rem;
-          letter-spacing: 0.25em;
-          color: #C8A15A;
-          text-transform: uppercase;
         }
 
         .fa-heading {

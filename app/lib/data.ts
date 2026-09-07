@@ -19,7 +19,7 @@ export const ventures: Venture[] = [
     image: '/images/suchir.webp',
     logo: '/logos/food-talk-india.webp',
     monogram: 'FT',
-    website: '#',
+    website: 'https://foodtalk.in/',
     category: 'Community & Media',
   },
   {
@@ -32,8 +32,9 @@ export const ventures: Venture[] = [
       'Better-for-you Indian mixers and tonics — low-calorie, seed-funded, and poured nationwide.',
     year: '2018',
     image: '/images/suchir2.webp',
+    logo: '/logos/jade-forest.webp',
     monogram: 'JF',
-    website: '#',
+    website: 'https://www.jadeforest.in/',
     category: 'Premium Beverages',
   },
   {
@@ -48,7 +49,7 @@ export const ventures: Venture[] = [
     image: '/images/suchir.webp',
     logo: '/logos/anthem.webp',
     monogram: 'AN',
-    website: '#',
+    website: 'https://theanthem.in/',
     category: 'Marketing Agency',
   },
 ];

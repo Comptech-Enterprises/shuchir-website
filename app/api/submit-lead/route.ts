@@ -46,7 +46,7 @@ export async function POST(req: NextRequest) {
             Company: company || "",
             Phone: mobile || "",
             Description: description,
-            Lead_Source: "Web Research",
+            Lead_Source: "shuchir.com",
             Lead_Status: "Not Contacted",
           },
         ],

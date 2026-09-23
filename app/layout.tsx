@@ -52,13 +52,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className="h-full">
       <head>
         {/* Google tag (gtag.js) */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-G1779D507R" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-W0PYSEWPBX" />
         <script
           dangerouslySetInnerHTML={{
             __html: `window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-G1779D507R');`,
+gtag('config', 'G-W0PYSEWPBX');`,
           }}
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />

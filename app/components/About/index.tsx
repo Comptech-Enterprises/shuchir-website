@@ -291,8 +291,7 @@ export default function About() {
           .portrait-card { max-height: 420px !important; }
           .portrait-card img { object-position: center 30% !important; }
         }
-        .venture-row-arrow { opacity: 0; }
-        .venture-row:hover .venture-row-arrow { opacity: 1; transform: translate(2px, -2px); }
+        .venture-row:hover .venture-row-arrow { transform: translate(2px, -2px); }
       `}</style>
     </section>
   );

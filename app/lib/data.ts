@@ -17,7 +17,7 @@ export const ventures: Venture[] = [
     year: '2013',
     image: '/images/suchir.webp',
     monogram: 'FT',
-    website: '#',
+    website: 'https://foodtalk.in/',
     category: 'Community & Media',
   },
   {
@@ -31,7 +31,7 @@ export const ventures: Venture[] = [
     year: '2018',
     image: '/images/suchir2.webp',
     monogram: 'JF',
-    website: '#',
+    website: 'http://jadeforest.in/',
     category: 'Premium Beverages',
   },
   {
@@ -45,7 +45,7 @@ export const ventures: Venture[] = [
     year: '2022',
     image: '/images/suchir.webp',
     monogram: 'AN',
-    website: '#',
+    website: 'https://theanthem.in/',
     category: 'Marketing Agency',
   },
 ];

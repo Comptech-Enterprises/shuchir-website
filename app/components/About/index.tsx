@@ -3,13 +3,14 @@
 import { useRef } from "react";
 import Image from "next/image";
 import { motion, useInView } from "framer-motion";
+import { RiArrowRightUpLine } from "react-icons/ri";
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
 const ventures = [
-  { year: "2013", name: "Food Talk India" },
-  { year: "2018", name: "Jade Forest" },
-  { year: "2022", name: "Anthem" },
+  { year: "2013", name: "Food Talk India", url: "https://foodtalk.in/" },
+  { year: "2018", name: "Jade Forest", url: "http://jadeforest.in/" },
+  { year: "2022", name: "Anthem", url: "https://theanthem.in/" },
 ];
 
 export default function About() {
@@ -225,9 +226,13 @@ export default function About() {
                 Ventures
               </p>
               <div style={{ display: "flex", flexDirection: "column" }}>
-                {ventures.map(({ year, name }, i) => (
-                  <div
+                {ventures.map(({ year, name, url }, i) => (
+                  <a
                     key={name}
+                    href={url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="venture-row"
                     style={{
                       display: "flex",
                       alignItems: "center",
@@ -235,6 +240,7 @@ export default function About() {
                       borderTop: "1px solid rgba(200,161,90,0.08)",
                       borderBottom: i === ventures.length - 1 ? "1px solid rgba(200,161,90,0.08)" : "none",
                       gap: "1rem",
+                      textDecoration: "none",
                     }}
                   >
                     <span
@@ -246,7 +252,12 @@ export default function About() {
                     <span className="font-body" style={{ fontSize: "0.9375rem", color: "#F5F5F5", flex: 1 }}>
                       {name}
                     </span>
-                  </div>
+                    <RiArrowRightUpLine
+                      className="venture-row-arrow"
+                      size={16}
+                      style={{ color: "#C8A15A", flexShrink: 0, transition: "transform 0.3s" }}
+                    />
+                  </a>
                 ))}
               </div>
             </div>
@@ -280,6 +291,8 @@ export default function About() {
           .portrait-card { max-height: 420px !important; }
           .portrait-card img { object-position: center 30% !important; }
         }
+        .venture-row-arrow { opacity: 0; }
+        .venture-row:hover .venture-row-arrow { opacity: 1; transform: translate(2px, -2px); }
       `}</style>
     </section>
   );

@@ -31,9 +31,9 @@ export default function Navbar() {
           right: 0,
           zIndex: 50,
           transition: 'background 0.5s, border-color 0.5s',
-          background: scrolled ? 'rgba(14,14,14,0.85)' : 'transparent',
+          background: scrolled ? 'rgba(0,0,0,0.85)' : 'transparent',
           backdropFilter: scrolled ? 'blur(20px)' : 'none',
-          borderBottom: scrolled ? '1px solid rgba(200,161,90,0.12)' : '1px solid transparent',
+          borderBottom: scrolled ? '1px solid rgba(139,127,232,0.18)' : '1px solid transparent',
         }}
       >
         <div className="site-container">
@@ -58,13 +58,13 @@ export default function Navbar() {
                 fontSize: '1.5rem',
                 fontWeight: 700,
                 letterSpacing: '0.12em',
-                color: '#F5F5F5',
+                color: '#FFFFFF',
                 textDecoration: 'none',
                 flexShrink: 0,
                 transition: 'color 0.3s',
               }}
-              onMouseEnter={(e) => (e.currentTarget.style.color = '#C8A15A')}
-              onMouseLeave={(e) => (e.currentTarget.style.color = '#F5F5F5')}
+              onMouseEnter={(e) => (e.currentTarget.style.color = '#8b7fe8')}
+              onMouseLeave={(e) => (e.currentTarget.style.color = '#FFFFFF')}
             >
               Shuchir Suri
             </a>
@@ -95,16 +95,16 @@ export default function Navbar() {
                         cursor: 'pointer',
                         fontSize: '0.875rem',
                         letterSpacing: '0.04em',
-                        color: isActive ? '#C8A15A' : '#A1A1A1',
+                        color: isActive ? '#8b7fe8' : '#c0c6cc',
                         padding: '0.25rem 0',
                         position: 'relative',
                         transition: 'color 0.3s',
                       }}
                       onMouseEnter={(e) => {
-                        if (!isActive) e.currentTarget.style.color = '#F5F5F5';
+                        if (!isActive) e.currentTarget.style.color = '#FFFFFF';
                       }}
                       onMouseLeave={(e) => {
-                        if (!isActive) e.currentTarget.style.color = '#A1A1A1';
+                        if (!isActive) e.currentTarget.style.color = '#c0c6cc';
                       }}
                     >
                       {item.label}
@@ -114,7 +114,7 @@ export default function Navbar() {
                           bottom: 0,
                           left: 0,
                           height: '1px',
-                          background: '#C8A15A',
+                          background: '#8b7fe8',
                           width: isActive ? '100%' : '0',
                           transition: 'width 0.3s',
                         }}
@@ -131,8 +131,8 @@ export default function Navbar() {
               className="font-body nav-cta"
               style={{
                 background: 'none',
-                border: '1px solid rgba(200,161,90,0.4)',
-                color: '#C8A15A',
+                border: '1px solid rgba(139,127,232,0.4)',
+                color: '#8b7fe8',
                 fontSize: '0.8125rem',
                 letterSpacing: '0.06em',
                 padding: '0.625rem 1.5rem',
@@ -141,12 +141,12 @@ export default function Navbar() {
                 transition: 'all 0.3s',
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.background = '#C8A15A';
-                e.currentTarget.style.color = '#0E0E0E';
+                e.currentTarget.style.background = '#8b7fe8';
+                e.currentTarget.style.color = '#000000';
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.background = 'none';
-                e.currentTarget.style.color = '#C8A15A';
+                e.currentTarget.style.color = '#8b7fe8';
               }}
             >
               Get in Touch
@@ -156,7 +156,7 @@ export default function Navbar() {
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
               className="nav-hamburger"
-              style={{ background: 'none', border: 'none', color: '#F5F5F5', cursor: 'pointer', padding: '0.25rem' }}
+              style={{ background: 'none', border: 'none', color: '#FFFFFF', cursor: 'pointer', padding: '0.25rem' }}
               aria-label="Toggle menu"
             >
               {mobileOpen ? <RiCloseLine size={24} /> : <RiMenuLine size={24} />}
@@ -177,7 +177,7 @@ export default function Navbar() {
               position: 'fixed',
               inset: 0,
               zIndex: 40,
-              background: '#0E0E0E',
+              background: '#000000',
               display: 'flex',
               flexDirection: 'column',
               justifyContent: 'center',
@@ -198,7 +198,7 @@ export default function Navbar() {
                   border: 'none',
                   cursor: 'pointer',
                   fontSize: '2.5rem',
-                  color: '#F5F5F5',
+                  color: '#FFFFFF',
                   transition: 'color 0.3s',
                 }}
               >

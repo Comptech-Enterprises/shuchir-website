@@ -16,8 +16,8 @@ export default function Button({ children, variant = 'primary', href, onClick, c
     'inline-flex items-center gap-2 px-7 py-3.5 text-sm font-medium tracking-wide font-body transition-all duration-300 cursor-pointer';
 
   const styles = {
-    primary: 'bg-[#C8A15A] text-[#0E0E0E] hover:bg-[#D4B87A]',
-    outline: 'border border-[rgba(200,161,90,0.4)] text-[#F5F5F5] hover:border-[#C8A15A] hover:text-[#C8A15A]',
+    primary: 'bg-[#8b7fe8] text-[#000000] hover:bg-[#b8a8f0]',
+    outline: 'border border-[rgba(139,127,232,0.4)] text-[#FFFFFF] hover:border-[#8b7fe8] hover:text-[#8b7fe8]',
   };
 
   const content = (

@@ -57,7 +57,7 @@ export default function Hero() {
       style={{
         position: 'relative',
         minHeight: '100vh',
-        background: '#0E0E0E',
+        background: '#000000',
         overflow: 'hidden',
         display: 'flex',
         alignItems: 'center',
@@ -70,7 +70,7 @@ export default function Hero() {
           width: '700px',
           height: '700px',
           borderRadius: '50%',
-          background: 'radial-gradient(circle, rgba(200,161,90,0.07) 0%, transparent 70%)',
+          background: 'radial-gradient(circle, rgba(139,127,232,0.07) 0%, transparent 70%)',
           pointerEvents: 'none',
           x: gX,
           y: gY,
@@ -110,7 +110,7 @@ export default function Hero() {
                 style={{
                   fontSize: 'clamp(3rem, 7vw, 6.5rem)',
                   fontWeight: 700,
-                  color: '#F5F5F5',
+                  color: '#FFFFFF',
                   lineHeight: 0.95,
                   letterSpacing: '-0.02em',
                   margin: 0,
@@ -147,7 +147,7 @@ export default function Hero() {
             >
               <span
                 className="font-heading"
-                style={{ fontSize: 'clamp(1rem, 2vw, 1.35rem)', color: '#A1A1A1', fontStyle: 'italic' }}
+                style={{ fontSize: 'clamp(1rem, 2vw, 1.35rem)', color: '#c0c6cc', fontStyle: 'italic' }}
               >
                 {displayed}
               </span>
@@ -156,7 +156,7 @@ export default function Hero() {
                   display: 'inline-block',
                   width: '2px',
                   height: '1.2rem',
-                  background: '#C8A15A',
+                  background: '#8b7fe8',
                   marginLeft: '3px',
                   animation: 'blink 1s step-end infinite',
                 }}
@@ -170,7 +170,7 @@ export default function Hero() {
               transition={{ duration: 1, ease, delay: 1 }}
               style={{
                 height: '1px',
-                background: 'linear-gradient(90deg, #C8A15A, rgba(200,161,90,0.15), transparent)',
+                background: 'linear-gradient(90deg, #8b7fe8, rgba(139,127,232,0.15), transparent)',
                 transformOrigin: 'left',
                 maxWidth: '400px',
                 marginBottom: '1.75rem',
@@ -184,7 +184,7 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 1.1 }}
               className="font-body"
               style={{
-                color: '#A1A1A1',
+                color: '#c0c6cc',
                 fontSize: 'clamp(0.875rem, 1.4vw, 1rem)',
                 lineHeight: 1.85,
                 maxWidth: '420px',
@@ -205,10 +205,10 @@ export default function Hero() {
           >
             <div style={{ position: 'relative', width: 'clamp(240px, 26vw, 380px)', height: 'clamp(300px, 34vw, 500px)' }}>
               {/* Outer frame */}
-              <div style={{ position: 'absolute', inset: '-10px', border: '1px solid rgba(200,161,90,0.1)', pointerEvents: 'none' }} />
+              <div style={{ position: 'absolute', inset: '-10px', border: '1px solid rgba(139,127,232,0.15)', pointerEvents: 'none' }} />
               {/* Corner accents */}
-              <div style={{ position: 'absolute', top: '10px', right: '10px', width: '40px', height: '40px', borderTop: '2px solid #C8A15A', borderRight: '2px solid #C8A15A', opacity: 0.6 }} />
-              <div style={{ position: 'absolute', bottom: '10px', left: '10px', width: '40px', height: '40px', borderBottom: '2px solid #C8A15A', borderLeft: '2px solid #C8A15A', opacity: 0.6 }} />
+              <div style={{ position: 'absolute', top: '10px', right: '10px', width: '40px', height: '40px', borderTop: '2px solid #8b7fe8', borderRight: '2px solid #8b7fe8', opacity: 0.6 }} />
+              <div style={{ position: 'absolute', bottom: '10px', left: '10px', width: '40px', height: '40px', borderBottom: '2px solid #8b7fe8', borderLeft: '2px solid #8b7fe8', opacity: 0.6 }} />
 
               {/* Card */}
               <div style={{ position: 'relative', width: '100%', height: '100%', overflow: 'hidden' }}>
@@ -249,7 +249,7 @@ export default function Hero() {
           color: '#555',
           transition: 'color 0.3s',
         }}
-        onMouseEnter={(e) => (e.currentTarget.style.color = '#C8A15A')}
+        onMouseEnter={(e) => (e.currentTarget.style.color = '#8b7fe8')}
         onMouseLeave={(e) => (e.currentTarget.style.color = '#555')}
       >
         <span className="font-body" style={{ fontSize: '0.6rem', letterSpacing: '0.22em', textTransform: 'uppercase' }}>Scroll</span>

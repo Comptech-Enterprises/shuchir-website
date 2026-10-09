@@ -21,7 +21,7 @@ export default function Footer() {
         style={{
           height: "1px",
           background:
-            "linear-gradient(90deg, transparent, rgba(200,161,90,0.35) 30%, rgba(200,161,90,0.35) 70%, transparent)",
+            "linear-gradient(90deg, transparent, rgba(139,127,232,0.35) 30%, rgba(139,127,232,0.35) 70%, transparent)",
         }}
       />
 
@@ -37,7 +37,7 @@ export default function Footer() {
             gridTemplateColumns: "1.2fr 1fr 1fr",
             gap: "3rem 4rem",
             padding: "4rem 0 3rem",
-            borderBottom: "1px solid rgba(200,161,90,0.08)",
+            borderBottom: "1px solid rgba(139,127,232,0.12)",
           }}
           className="footer-grid"
         >
@@ -54,7 +54,7 @@ export default function Footer() {
                 fontSize: "2rem",
                 fontWeight: 700,
                 letterSpacing: "0.18em",
-                color: "#C8A15A",
+                color: "#8b7fe8",
                 display: "block",
                 marginBottom: "0.5rem",
                 lineHeight: 1,
@@ -103,7 +103,7 @@ export default function Footer() {
                     transition: "color 0.3s",
                     width: "fit-content",
                   }}
-                  onMouseEnter={(e) => (e.currentTarget.style.color = "#C8A15A")}
+                  onMouseEnter={(e) => (e.currentTarget.style.color = "#8b7fe8")}
                   onMouseLeave={(e) => (e.currentTarget.style.color = "#555")}
                 >
                   {item.label}
@@ -147,7 +147,7 @@ export default function Footer() {
                   onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.7")}
                   onMouseLeave={(e) => (e.currentTarget.style.opacity = "1")}
                 >
-                  <Icon size={15} style={{ color: "#C8A15A", flexShrink: 0 }} />
+                  <Icon size={15} style={{ color: "#8b7fe8", flexShrink: 0 }} />
                   <span className="font-body" style={{ fontSize: "0.875rem", color: "#555", letterSpacing: "0.03em" }}>
                     {label}
                   </span>
@@ -178,7 +178,7 @@ export default function Footer() {
             aria-label="Back to top"
             style={{
               background: "none",
-              border: "1px solid rgba(200,161,90,0.15)",
+              border: "1px solid rgba(139,127,232,0.18)",
               width: "32px",
               height: "32px",
               display: "flex",
@@ -189,11 +189,11 @@ export default function Footer() {
               transition: "all 0.3s",
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.borderColor = "#C8A15A";
-              e.currentTarget.style.color = "#C8A15A";
+              e.currentTarget.style.borderColor = "#8b7fe8";
+              e.currentTarget.style.color = "#8b7fe8";
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.borderColor = "rgba(200,161,90,0.15)";
+              e.currentTarget.style.borderColor = "rgba(139,127,232,0.18)";
               e.currentTarget.style.color = "#333";
             }}
           >

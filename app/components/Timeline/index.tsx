@@ -37,7 +37,7 @@ function TimelineEntry({
           style={{
             fontSize: 'clamp(1.25rem, 2.5vw, 1.75rem)',
             fontWeight: 700,
-            color: '#C8A15A',
+            color: '#8b7fe8',
             display: 'block',
             lineHeight: 1,
           }}
@@ -57,10 +57,10 @@ function TimelineEntry({
             width: '10px',
             height: '10px',
             borderRadius: '50%',
-            background: '#C8A15A',
+            background: '#8b7fe8',
             flexShrink: 0,
             marginTop: '0.3rem',
-            boxShadow: '0 0 12px rgba(200,161,90,0.45)',
+            boxShadow: '0 0 12px rgba(139,127,232,0.45)',
           }}
         />
         {/* line */}
@@ -72,7 +72,7 @@ function TimelineEntry({
             style={{
               flex: 1,
               width: '1px',
-              background: 'linear-gradient(to bottom, rgba(200,161,90,0.5), rgba(200,161,90,0.05))',
+              background: 'linear-gradient(to bottom, rgba(139,127,232,0.5), rgba(139,127,232,0.05))',
               transformOrigin: 'top',
               minHeight: '80px',
               marginTop: '6px',
@@ -94,7 +94,7 @@ function TimelineEntry({
             fontSize: '0.65rem',
             letterSpacing: '0.18em',
             textTransform: 'uppercase',
-            color: '#C8A15A',
+            color: '#8b7fe8',
             marginBottom: '0.4rem',
           }}
         >
@@ -105,7 +105,7 @@ function TimelineEntry({
           style={{
             fontSize: 'clamp(1.5rem, 3vw, 2.25rem)',
             fontWeight: 700,
-            color: '#F5F5F5',
+            color: '#FFFFFF',
             lineHeight: 1.15,
             marginBottom: item.metric ? '0.7rem' : '0.85rem',
           }}
@@ -120,9 +120,9 @@ function TimelineEntry({
               fontSize: '0.68rem',
               letterSpacing: '0.08em',
               textTransform: 'uppercase',
-              color: '#C8A15A',
-              border: '1px solid rgba(200,161,90,0.3)',
-              background: 'rgba(200,161,90,0.05)',
+              color: '#8b7fe8',
+              border: '1px solid rgba(139,127,232,0.3)',
+              background: 'rgba(139,127,232,0.05)',
               padding: '0.3rem 0.7rem',
               marginBottom: '0.9rem',
             }}
@@ -133,7 +133,7 @@ function TimelineEntry({
         <p
           className="font-body"
           style={{
-            color: '#A1A1A1',
+            color: '#c0c6cc',
             fontSize: '0.9375rem',
             lineHeight: 1.8,
             maxWidth: '580px',
@@ -153,7 +153,7 @@ export default function Timeline() {
   return (
     <section
       id="journey"
-      style={{ background: '#0E0E0E', padding: 'clamp(3.5rem, 8vw, 7rem) 0', position: 'relative', overflow: 'hidden' }}
+      style={{ background: '#000000', padding: 'clamp(3.5rem, 8vw, 7rem) 0', position: 'relative', overflow: 'hidden' }}
     >
       {/* Ghost year watermark */}
       <div
@@ -165,7 +165,7 @@ export default function Timeline() {
           transform: 'translateY(-50%)',
           fontSize: 'clamp(10rem, 22vw, 22rem)',
           fontWeight: 900,
-          color: 'rgba(200,161,90,0.025)',
+          color: 'rgba(139,127,232,0.04)',
           letterSpacing: '-0.04em',
           userSelect: 'none',
           pointerEvents: 'none',
@@ -184,7 +184,7 @@ export default function Timeline() {
             transition={{ duration: 0.5 }}
             className="font-body"
             style={{
-              color: '#C8A15A',
+              color: '#8b7fe8',
               fontSize: '0.7rem',
               letterSpacing: '0.22em',
               textTransform: 'uppercase',
@@ -194,7 +194,7 @@ export default function Timeline() {
               gap: '0.75rem',
             }}
           >
-            <span style={{ width: '2rem', height: '1px', background: '#C8A15A', flexShrink: 0 }} />
+            <span style={{ width: '2rem', height: '1px', background: '#8b7fe8', flexShrink: 0 }} />
             The Journey
           </motion.p>
 
@@ -207,7 +207,7 @@ export default function Timeline() {
               style={{
                 fontSize: 'clamp(2.5rem, 5.5vw, 4.5rem)',
                 fontWeight: 700,
-                color: '#F5F5F5',
+                color: '#FFFFFF',
                 lineHeight: 1.05,
                 letterSpacing: '-0.02em',
                 margin: 0,

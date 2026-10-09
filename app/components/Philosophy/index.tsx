@@ -19,7 +19,7 @@ export default function Philosophy() {
       <div
         className="absolute inset-0 pointer-events-none opacity-[0.025]"
         style={{
-          backgroundImage: 'radial-gradient(circle, #C8A15A 1px, transparent 1px)',
+          backgroundImage: 'radial-gradient(circle, #8b7fe8 1px, transparent 1px)',
           backgroundSize: '48px 48px',
         }}
       />
@@ -27,7 +27,7 @@ export default function Philosophy() {
       {/* Gold ambient glow */}
       <div
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full pointer-events-none opacity-[0.04]"
-        style={{ background: 'radial-gradient(circle, #C8A15A 0%, transparent 70%)' }}
+        style={{ background: 'radial-gradient(circle, #8b7fe8 0%, transparent 70%)' }}
       />
 
       <div className="max-w-5xl mx-auto px-8 md:px-12 lg:px-16 text-center">
@@ -38,9 +38,9 @@ export default function Philosophy() {
           transition={{ duration: 0.6 }}
           className="inline-flex items-center gap-3 mb-14"
         >
-          <span className="w-8 h-px bg-[#C8A15A]" />
-          <span className="text-[#C8A15A] text-xs tracking-[0.25em] uppercase font-body">Philosophy</span>
-          <span className="w-8 h-px bg-[#C8A15A]" />
+          <span className="w-8 h-px bg-[#8b7fe8]" />
+          <span className="text-[#8b7fe8] text-xs tracking-[0.25em] uppercase font-body">Philosophy</span>
+          <span className="w-8 h-px bg-[#8b7fe8]" />
         </motion.span>
 
         <div className="space-y-6 md:space-y-8">
@@ -51,7 +51,7 @@ export default function Philosophy() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={viewportConfig}
               transition={{ duration: 1, delay, ease: [0.22, 1, 0.36, 1] }}
-              className="font-heading text-3xl md:text-5xl lg:text-6xl font-bold text-[#F5F5F5] leading-tight"
+              className="font-heading text-3xl md:text-5xl lg:text-6xl font-bold text-[#FFFFFF] leading-tight"
             >
               {text}
             </motion.p>
@@ -67,9 +67,9 @@ export default function Philosophy() {
           className="mt-20 flex items-center justify-center gap-6"
           style={{ originX: 0.5 }}
         >
-          <div className="flex-1 h-px bg-gradient-to-r from-transparent to-[rgba(200,161,90,0.4)]" />
-          <div className="w-2 h-2 bg-[#C8A15A] rotate-45" />
-          <div className="flex-1 h-px bg-gradient-to-l from-transparent to-[rgba(200,161,90,0.4)]" />
+          <div className="flex-1 h-px bg-gradient-to-r from-transparent to-[rgba(139,127,232,0.4)]" />
+          <div className="w-2 h-2 bg-[#8b7fe8] rotate-45" />
+          <div className="flex-1 h-px bg-gradient-to-l from-transparent to-[rgba(139,127,232,0.4)]" />
         </motion.div>
 
         <motion.p
@@ -77,7 +77,7 @@ export default function Philosophy() {
           whileInView={{ opacity: 1 }}
           viewport={viewportConfig}
           transition={{ duration: 0.8, delay: 1.1 }}
-          className="mt-10 text-[#A1A1A1] font-body text-sm tracking-widest uppercase"
+          className="mt-10 text-[#c0c6cc] font-body text-sm tracking-widest uppercase"
         >
           — Shuchir Suri
         </motion.p>

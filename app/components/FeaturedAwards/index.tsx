@@ -69,7 +69,7 @@ export default function FeaturedAwards() {
         .fa-section {
           background: #0A0A0A;
           padding: clamp(5rem, 10vw, 8rem) 0 clamp(4rem, 8vw, 6rem);
-          border-top: 1px solid rgba(200,161,90,0.08);
+          border-top: 1px solid rgba(139,127,232,0.12);
           overflow: hidden;
         }
 
@@ -88,21 +88,21 @@ export default function FeaturedAwards() {
 
         .fa-line {
           height: 1px;
-          background: #C8A15A;
+          background: #8b7fe8;
           display: inline-block;
         }
 
         .fa-label {
           font-size: 0.7rem;
           letter-spacing: 0.25em;
-          color: #C8A15A;
+          color: #8b7fe8;
           text-transform: uppercase;
         }
 
         .fa-heading {
           font-size: clamp(2.4rem, 5vw, 3.5rem);
           font-weight: 700;
-          color: #F5F5F5;
+          color: #FFFFFF;
           letter-spacing: -0.025em;
           line-height: 1.1;
           margin: 0;
@@ -110,8 +110,8 @@ export default function FeaturedAwards() {
 
         .fa-ticker-wrap {
           position: relative;
-          border-top: 1px solid rgba(200,161,90,0.12);
-          border-bottom: 1px solid rgba(200,161,90,0.12);
+          border-top: 1px solid rgba(139,127,232,0.15);
+          border-bottom: 1px solid rgba(139,127,232,0.15);
           padding: 1.75rem 0;
         }
 
@@ -167,14 +167,14 @@ export default function FeaturedAwards() {
         }
 
         .fa-item-name:hover {
-          color: #C8A15A;
+          color: #8b7fe8;
         }
 
         .fa-item-dot {
           width: 6px;
           height: 6px;
           border-radius: 50%;
-          background: #C8A15A;
+          background: #8b7fe8;
           display: inline-block;
           flex-shrink: 0;
           opacity: 0.3;

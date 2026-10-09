@@ -22,13 +22,13 @@ export default function About() {
       id="about"
       ref={ref}
       style={{
-        background: "#0E0E0E",
+        background: "#000000",
         position: "relative",
         overflow: "hidden",
       }}
     >
       {/* ── Section divider ─────────────────────────────── */}
-      <div style={{ borderBottom: "1px solid rgba(200,161,90,0.1)" }} />
+      <div style={{ borderBottom: "1px solid rgba(139,127,232,0.15)" }} />
 
       {/* ── Main two-column body ─────────────────────────────── */}
       <div className="site-container" style={{ paddingTop: "3rem", paddingBottom: "5rem" }}>
@@ -58,7 +58,7 @@ export default function About() {
               style={{
                 flex: 1,
                 background: "linear-gradient(160deg, #191919 0%, #111 100%)",
-                border: "1px solid rgba(200,161,90,0.1)",
+                border: "1px solid rgba(139,127,232,0.15)",
                 position: "relative",
                 display: "flex",
                 flexDirection: "column",
@@ -76,8 +76,8 @@ export default function About() {
                   right: "14px",
                   width: "36px",
                   height: "36px",
-                  borderTop: "1.5px solid #C8A15A",
-                  borderRight: "1.5px solid #C8A15A",
+                  borderTop: "1.5px solid #8b7fe8",
+                  borderRight: "1.5px solid #8b7fe8",
                   opacity: 0.6,
                   zIndex: 1,
                 }}
@@ -89,8 +89,8 @@ export default function About() {
                   left: "14px",
                   width: "36px",
                   height: "36px",
-                  borderBottom: "1.5px solid #C8A15A",
-                  borderLeft: "1.5px solid #C8A15A",
+                  borderBottom: "1.5px solid #8b7fe8",
+                  borderLeft: "1.5px solid #8b7fe8",
                   opacity: 0.6,
                   zIndex: 1,
                 }}
@@ -114,7 +114,7 @@ export default function About() {
                   style={{
                     fontSize: "1.1rem",
                     fontStyle: "italic",
-                    color: "#C8A15A",
+                    color: "#8b7fe8",
                     opacity: 0.75,
                     marginBottom: "0.2rem",
                   }}
@@ -154,7 +154,7 @@ export default function About() {
                   style={{
                     fontSize: "clamp(2rem, 3.5vw, 3rem)",
                     fontWeight: 700,
-                    color: "#F5F5F5",
+                    color: "#FFFFFF",
                     lineHeight: 1.1,
                     letterSpacing: "-0.02em",
                     margin: 0,
@@ -185,28 +185,28 @@ export default function About() {
 
             {/* Bio */}
             <div style={{ display: "flex", flexDirection: "column", gap: "1.1rem" }}>
-              <p className="font-body" style={{ color: "#A1A1A1", fontSize: "0.9375rem", lineHeight: 1.85 }}>
+              <p className="font-body" style={{ color: "#c0c6cc", fontSize: "0.9375rem", lineHeight: 1.85 }}>
                 I&apos;ve spent the past decade building brands at the intersection of culture, creativity, and
                 commerce, shaping how India eats, drinks, and experiences.
               </p>
-              <p className="font-body" style={{ color: "#A1A1A1", fontSize: "0.9375rem", lineHeight: 1.85 }}>
-                It started with <span style={{ color: "#F5F5F5" }}>Food Talk India</span>, a media and cultural
+              <p className="font-body" style={{ color: "#c0c6cc", fontSize: "0.9375rem", lineHeight: 1.85 }}>
+                It started with <span style={{ color: "#FFFFFF" }}>Food Talk India</span>, a media and cultural
                 platform I co-founded that now reaches millions every month. From there came{" "}
-                <span style={{ color: "#F5F5F5" }}>Anthem</span>, a full-service marketing agency that partners with
+                <span style={{ color: "#FFFFFF" }}>Anthem</span>, a full-service marketing agency that partners with
                 some of India&apos;s biggest brands, both domestic and global. Then came{" "}
-                <span style={{ color: "#F5F5F5" }}>Jade Forest</span>, a better-for-you beverage brand redefining
+                <span style={{ color: "#FFFFFF" }}>Jade Forest</span>, a better-for-you beverage brand redefining
                 how India drinks, one bottle at a time.
               </p>
-              <p className="font-body" style={{ color: "#A1A1A1", fontSize: "0.9375rem", lineHeight: 1.85 }}>
-                With <span style={{ color: "#F5F5F5" }}>Explorers Club</span> (formerly Gin Explorers Club),
+              <p className="font-body" style={{ color: "#c0c6cc", fontSize: "0.9375rem", lineHeight: 1.85 }}>
+                With <span style={{ color: "#FFFFFF" }}>Explorers Club</span> (formerly Gin Explorers Club),
                 I&apos;ve helped build one of India&apos;s largest experiential IPs, a festival series that has
                 welcomed over 1,00,000 attendees across three cities.
               </p>
-              <p className="font-body" style={{ color: "#A1A1A1", fontSize: "0.9375rem", lineHeight: 1.85 }}>
+              <p className="font-body" style={{ color: "#c0c6cc", fontSize: "0.9375rem", lineHeight: 1.85 }}>
                 Across every venture, my focus remains the same: building communities through culture, creating value
                 through partnerships, and crafting experiences that stay with people long after they end.
               </p>
-              <p className="font-body" style={{ color: "#A1A1A1", fontSize: "0.9375rem", lineHeight: 1.85 }}>
+              <p className="font-body" style={{ color: "#c0c6cc", fontSize: "0.9375rem", lineHeight: 1.85 }}>
                 You could say I&apos;m a builder at heart, always chasing what&apos;s next.
               </p>
             </div>
@@ -237,8 +237,8 @@ export default function About() {
                       display: "flex",
                       alignItems: "center",
                       padding: "0.875rem 0",
-                      borderTop: "1px solid rgba(200,161,90,0.08)",
-                      borderBottom: i === ventures.length - 1 ? "1px solid rgba(200,161,90,0.08)" : "none",
+                      borderTop: "1px solid rgba(139,127,232,0.12)",
+                      borderBottom: i === ventures.length - 1 ? "1px solid rgba(139,127,232,0.12)" : "none",
                       gap: "1rem",
                       textDecoration: "none",
                     }}
@@ -249,13 +249,13 @@ export default function About() {
                     >
                       {year}
                     </span>
-                    <span className="font-body" style={{ fontSize: "0.9375rem", color: "#F5F5F5", flex: 1 }}>
+                    <span className="font-body" style={{ fontSize: "0.9375rem", color: "#FFFFFF", flex: 1 }}>
                       {name}
                     </span>
                     <RiArrowRightUpLine
                       className="venture-row-arrow"
                       size={16}
-                      style={{ color: "#C8A15A", flexShrink: 0, transition: "transform 0.3s" }}
+                      style={{ color: "#8b7fe8", flexShrink: 0, transition: "transform 0.3s" }}
                     />
                   </a>
                 ))}
@@ -271,7 +271,7 @@ export default function About() {
                 style={{
                   fontSize: '0.65rem',
                   padding: '0.25rem 0.7rem',
-                  border: '1px solid rgba(200,161,90,0.15)',
+                  border: '1px solid rgba(139,127,232,0.15)',
                   color: '#444',
                   letterSpacing: '0.06em',
                   textTransform: 'uppercase',

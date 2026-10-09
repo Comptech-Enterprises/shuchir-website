@@ -1,14 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NZ+Basic:wght@100..400&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&family=Roboto:wght@300;400;500;700&display=swap');
 @import "tailwindcss";
 
 :root {
-  --bg: #0E0E0E;
-  --surface: #181818;
-  --text-primary: #F5F5F5;
-  --text-secondary: #A1A1A1;
-  --accent: #C8A15A;
-  --accent-light: #D4B87A;
-  --border: rgba(200, 161, 90, 0.15);
+  --bg: #000000;
+  --surface: #0d0d0d;
+  --surface-2: #121212;
+  --surface-3: #1c1c1c;
+  --text-primary: #FFFFFF;
+  --text-secondary: #c0c6cc;
+  --text-muted: #888888;
+  --accent: #8b7fe8;
+  --accent-light: #b8a8f0;
+  --accent-soft: #b8a8f0;
+  --accent-deep: #6c5ce7;
+  --accent-pink: #cf9fd8;
+  --accent-glow: rgba(139, 127, 232, 0.4);
+  --border: rgba(139, 127, 232, 0.18);
 }
 
 @theme inline {
@@ -19,8 +26,10 @@
   --color-accent: var(--accent);
   --color-accent-light: var(--accent-light);
   --color-border: var(--border);
-  --font-heading: 'Playfair Display', serif;
-  --font-body: 'Inter', sans-serif;
+  --font-heading: 'Poppins', sans-serif;
+  --font-display: 'Poppins', sans-serif;
+  --font-body: 'Roboto', sans-serif;
+  --font-hand: 'Playwrite NZ Basic', cursive;
 }
 
 * {
@@ -36,7 +45,7 @@ html {
 body {
   background: var(--bg);
   color: var(--text-primary);
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -44,7 +53,7 @@ body {
 
 ::selection {
   background: var(--accent);
-  color: var(--bg);
+  color: #000000;
 }
 
 ::-webkit-scrollbar {
@@ -61,15 +70,19 @@ body {
 }
 
 .font-heading {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .font-body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+.font-hand {
+  font-family: 'Playwrite NZ Basic', cursive;
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, #C8A15A 0%, #D4B87A 50%, #C8A15A 100%);
+  background: linear-gradient(110deg, #FFFFFF 0%, #b8a8f0 32%, #8b7fe8 62%, #cf9fd8 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

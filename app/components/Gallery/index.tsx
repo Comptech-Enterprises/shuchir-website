@@ -9,18 +9,18 @@ import { galleryImages, galleryCategories } from '@/lib/data';
 const ease = [0.22, 1, 0.36, 1] as const;
 
 const categoryAccent: Record<string, string> = {
-  Events: '#C8A15A',
-  Speaking: '#C8A15A',
-  Interviews: '#C8A15A',
-  Podcasts: '#C8A15A',
-  'Brand Shoots': '#C8A15A',
+  Events: '#8b7fe8',
+  Speaking: '#8b7fe8',
+  Interviews: '#8b7fe8',
+  Podcasts: '#8b7fe8',
+  'Brand Shoots': '#8b7fe8',
 };
 
 function Frame({ image, index }: { image: (typeof galleryImages)[0]; index: number }) {
   // Real photos live in public/images; anything still named "placeholder-*"
   // renders the developed-frame fallback instead of a broken image.
   const hasPhoto = Boolean(image.src) && !image.src.includes('placeholder');
-  const accent = categoryAccent[image.category] ?? '#C8A15A';
+  const accent = categoryAccent[image.category] ?? '#8b7fe8';
   const frameNo = String(index + 1).padStart(2, '0');
 
   return (
@@ -92,10 +92,10 @@ export default function Gallery() {
               transition={{ duration: 0.6, ease }}
               style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem' }}
             >
-              <span style={{ width: '2rem', height: '1px', background: '#C8A15A' }} />
+              <span style={{ width: '2rem', height: '1px', background: '#8b7fe8' }} />
               <span
                 className="font-body"
-                style={{ fontSize: '0.65rem', letterSpacing: '0.24em', color: '#C8A15A', textTransform: 'uppercase' }}
+                style={{ fontSize: '0.65rem', letterSpacing: '0.24em', color: '#8b7fe8', textTransform: 'uppercase' }}
               >
                 The Contact Sheet
               </span>
@@ -159,8 +159,8 @@ export default function Gallery() {
         }
         .gallery-title {
           font-size: clamp(2.4rem, 5.5vw, 4.25rem);
-          font-weight: 700;
-          color: #F5F5F5;
+          fontWeight: 700;
+          color: #FFFFFF;
           line-height: 1.02;
           letter-spacing: -0.02em;
           margin: 0;
@@ -182,15 +182,15 @@ export default function Gallery() {
           color: #6f6f6f;
           transition: color 0.3s;
         }
-        .gallery-filter:hover { color: #F5F5F5; }
-        .gallery-filter.is-active { color: #F5F5F5; }
+        .gallery-filter:hover { color: #FFFFFF; }
+        .gallery-filter.is-active { color: #FFFFFF; }
         .gallery-underline {
           position: absolute;
           left: 0;
           right: 0;
           bottom: -3px;
           height: 1px;
-          background: #C8A15A;
+          background: #8b7fe8;
         }
         .gallery-grid {
           display: grid;
@@ -203,10 +203,10 @@ export default function Gallery() {
           aspect-ratio: 4 / 5;
           overflow: hidden;
           background: #131313;
-          border: 1px solid rgba(200,161,90,0.10);
+          border: 1px solid rgba(139,127,232,0.15);
           transition: border-color 0.45s ease;
         }
-        .frame:hover .frame-inner { border-color: rgba(200,161,90,0.35); }
+        .frame:hover .frame-inner { border-color: rgba(139,127,232,0.35); }
         .frame-photo {
           object-fit: cover;
           transition: transform 0.7s cubic-bezier(0.22,1,0.36,1), filter 0.5s ease;
@@ -220,7 +220,7 @@ export default function Gallery() {
           align-items: center;
           justify-content: center;
           background:
-            radial-gradient(120% 120% at 30% 20%, rgba(200,161,90,0.06), transparent 60%),
+            radial-gradient(120% 120% at 30% 20%, rgba(139,127,232,0.08), transparent 60%),
             repeating-linear-gradient(45deg, #121212 0, #121212 8px, #101010 8px, #101010 16px);
         }
         .frame-mono {
@@ -249,10 +249,10 @@ export default function Gallery() {
           transition: opacity 0.4s ease, transform 0.4s ease;
           pointer-events: none;
         }
-        .tick-tl { top: 6px; left: 6px; border-top: 1px solid #C8A15A; border-left: 1px solid #C8A15A; transform: translate(4px,4px); }
-        .tick-tr { top: 6px; right: 6px; border-top: 1px solid #C8A15A; border-right: 1px solid #C8A15A; transform: translate(-4px,4px); }
-        .tick-bl { bottom: 6px; left: 6px; border-bottom: 1px solid #C8A15A; border-left: 1px solid #C8A15A; transform: translate(4px,-4px); }
-        .tick-br { bottom: 6px; right: 6px; border-bottom: 1px solid #C8A15A; border-right: 1px solid #C8A15A; transform: translate(-4px,-4px); }
+        .tick-tl { top: 6px; left: 6px; border-top: 1px solid #8b7fe8; border-left: 1px solid #8b7fe8; transform: translate(4px,4px); }
+        .tick-tr { top: 6px; right: 6px; border-top: 1px solid #8b7fe8; border-right: 1px solid #8b7fe8; transform: translate(-4px,4px); }
+        .tick-bl { bottom: 6px; left: 6px; border-bottom: 1px solid #8b7fe8; border-left: 1px solid #8b7fe8; transform: translate(4px,-4px); }
+        .tick-br { bottom: 6px; right: 6px; border-bottom: 1px solid #8b7fe8; border-right: 1px solid #8b7fe8; transform: translate(-4px,-4px); }
         .frame:hover .tick { opacity: 1; transform: translate(0,0); }
         .frame-cap {
           display: flex;
@@ -271,7 +271,7 @@ export default function Gallery() {
           line-height: 1.35;
           transition: color 0.35s ease;
         }
-        .frame:hover .frame-title { color: #F5F5F5; }
+        .frame:hover .frame-title { color: #FFFFFF; }
 
         @media (max-width: 1024px) {
           .gallery-grid { grid-template-columns: repeat(3, 1fr); }

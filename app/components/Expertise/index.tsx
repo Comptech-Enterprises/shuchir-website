@@ -111,7 +111,7 @@ export default function Expertise() {
         .exp-section {
           background: #0A0A0A;
           padding: clamp(6rem, 12vw, 10rem) 0;
-          border-top: 1px solid rgba(200,161,90,0.08);
+          border-top: 1px solid rgba(139,127,232,0.12);
           overflow: hidden;
         }
 
@@ -130,21 +130,21 @@ export default function Expertise() {
 
         .exp-line {
           height: 1px;
-          background: #C8A15A;
+          background: #8b7fe8;
           display: inline-block;
         }
 
         .exp-label {
           font-size: 0.7rem;
           letter-spacing: 0.25em;
-          color: #C8A15A;
+          color: #8b7fe8;
           text-transform: uppercase;
         }
 
         .exp-heading {
           font-size: clamp(2.6rem, 5vw, 4rem);
           font-weight: 700;
-          color: #F5F5F5;
+          color: #FFFFFF;
           letter-spacing: -0.025em;
           line-height: 1.1;
           margin: 0;
@@ -169,15 +169,15 @@ export default function Expertise() {
           text-align: center;
           padding: clamp(2.5rem, 4vw, 3.5rem) clamp(1.25rem, 2vw, 1.75rem);
           position: relative;
-          border: 1px solid rgba(200,161,90,0.1);
-          background: rgba(200,161,90,0.02);
+          border: 1px solid rgba(139,127,232,0.15);
+          background: rgba(139,127,232,0.03);
           transition: border-color 0.5s ease, background 0.5s ease;
           overflow: hidden;
         }
 
         .exp-card:hover {
-          border-color: rgba(200,161,90,0.35);
-          background: rgba(200,161,90,0.05);
+          border-color: rgba(139,127,232,0.35);
+          background: rgba(139,127,232,0.06);
         }
 
         /* Ambient glow behind icon on hover */
@@ -188,7 +188,7 @@ export default function Expertise() {
           transform: translateX(-50%);
           width: 160px;
           height: 160px;
-          background: radial-gradient(circle, rgba(200,161,90,0.12) 0%, transparent 70%);
+          background: radial-gradient(circle, rgba(139,127,232,0.15) 0%, transparent 70%);
           opacity: 0;
           transition: opacity 0.6s ease;
           pointer-events: none;
@@ -206,7 +206,7 @@ export default function Expertise() {
           display: flex;
           align-items: center;
           justify-content: center;
-          color: #C8A15A;
+          color: #8b7fe8;
           position: relative;
           z-index: 1;
           transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
@@ -230,28 +230,28 @@ export default function Expertise() {
         .exp-card__title {
           font-size: clamp(1.5rem, 2vw, 1.8rem);
           font-weight: 700;
-          color: #F5F5F5;
+          color: #FFFFFF;
           margin: 0 0 1.25rem;
           letter-spacing: -0.01em;
           transition: color 0.4s ease;
         }
 
         .exp-card:hover .exp-card__title {
-          color: #C8A15A;
+          color: #8b7fe8;
         }
 
         /* ── Separator ── */
         .exp-card__separator {
           width: 2rem;
           height: 1px;
-          background: rgba(200,161,90,0.3);
+          background: rgba(139,127,232,0.3);
           margin: 0 auto 1.25rem;
           transition: width 0.5s cubic-bezier(0.22, 1, 0.36, 1), background 0.5s ease;
         }
 
         .exp-card:hover .exp-card__separator {
           width: 4rem;
-          background: #C8A15A;
+          background: #8b7fe8;
         }
 
         /* ── Description ── */

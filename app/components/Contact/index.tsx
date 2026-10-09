@@ -17,8 +17,8 @@ function Marquee() {
     <div
       style={{
         overflow: "hidden",
-        borderTop: "1px solid rgba(200,161,90,0.12)",
-        borderBottom: "1px solid rgba(200,161,90,0.12)",
+        borderTop: "1px solid rgba(139,127,232,0.15)",
+        borderBottom: "1px solid rgba(139,127,232,0.15)",
         padding: "0.75rem 0",
         marginBottom: "5rem",
       }}
@@ -32,7 +32,7 @@ function Marquee() {
           <span key={i} style={{ display: "inline-flex", alignItems: "center", gap: "3rem" }}>
             <span
               className="font-body"
-              style={{ fontSize: "0.75rem", letterSpacing: "0.2em", color: "#A1A1A1", textTransform: "uppercase" }}
+              style={{ fontSize: "0.75rem", letterSpacing: "0.2em", color: "#c0c6cc", textTransform: "uppercase" }}
             >
               {item}
             </span>
@@ -41,7 +41,7 @@ function Marquee() {
                 width: "4px",
                 height: "4px",
                 borderRadius: "50%",
-                background: "#C8A15A",
+                background: "#8b7fe8",
                 display: "inline-block",
                 flexShrink: 0,
               }}
@@ -72,9 +72,9 @@ function Field({
   const [focused, setFocused] = useState(false);
   const sharedStyle: React.CSSProperties = {
     width: "100%",
-    background: focused ? "rgba(200,161,90,0.06)" : "rgba(255,255,255,0.07)",
-    border: `1px solid ${focused ? "#C8A15A" : "rgba(255,255,255,0.35)"}`,
-    color: "#F5F5F5",
+    background: focused ? "rgba(139,127,232,0.06)" : "rgba(255,255,255,0.07)",
+    border: `1px solid ${focused ? "#8b7fe8" : "rgba(255,255,255,0.35)"}`,
+    color: "#FFFFFF",
     fontSize: "0.9375rem",
     padding: "0.875rem 1rem",
     outline: "none",
@@ -93,7 +93,7 @@ function Field({
           fontSize: "0.65rem",
           letterSpacing: "0.18em",
           textTransform: "uppercase",
-          color: focused ? "#C8A15A" : "#bbb",
+          color: focused ? "#8b7fe8" : "#bbb",
           marginBottom: "0.5rem",
           transition: "color 0.3s",
         }}
@@ -183,7 +183,7 @@ export default function Contact() {
             transition={{ duration: 0.5 }}
             className="font-body"
             style={{
-              color: "#C8A15A",
+              color: "#8b7fe8",
               fontSize: "0.7rem",
               letterSpacing: "0.22em",
               textTransform: "uppercase",
@@ -193,7 +193,7 @@ export default function Contact() {
               gap: "0.75rem",
             }}
           >
-            <span style={{ width: "2rem", height: "1px", background: "#C8A15A", flexShrink: 0 }} />
+            <span style={{ width: "2rem", height: "1px", background: "#8b7fe8", flexShrink: 0 }} />
             Contact
           </motion.p>
 
@@ -206,7 +206,7 @@ export default function Contact() {
               style={{
                 fontSize: "clamp(3rem, 7vw, 6rem)",
                 fontWeight: 700,
-                color: "#F5F5F5",
+                color: "#FFFFFF",
                 lineHeight: 1.05,
                 letterSpacing: "-0.02em",
                 margin: 0,
@@ -268,14 +268,14 @@ export default function Contact() {
                 animate={{ opacity: 1, scale: 1 }}
                 style={{
                   padding: "2.5rem",
-                  border: "1px solid rgba(200,161,90,0.3)",
+                  border: "1px solid rgba(139,127,232,0.3)",
                   textAlign: "center",
                 }}
               >
-                <p className="font-heading" style={{ fontSize: "1.5rem", color: "#C8A15A", marginBottom: "0.5rem" }}>
+                <p className="font-heading" style={{ fontSize: "1.5rem", color: "#8b7fe8", marginBottom: "0.5rem" }}>
                   Message sent ✓
                 </p>
-                <p className="font-body" style={{ color: "#A1A1A1", fontSize: "0.875rem" }}>
+                <p className="font-body" style={{ color: "#c0c6cc", fontSize: "0.875rem" }}>
                   I&apos;ll be in touch shortly.
                 </p>
               </motion.div>
@@ -333,8 +333,8 @@ export default function Contact() {
                     gap: "1.5rem",
                     width: "auto",
                     background: "none",
-                    border: "1px solid rgba(200,161,90,0.35)",
-                    color: "#F5F5F5",
+                    border: "1px solid rgba(139,127,232,0.35)",
+                    color: "#FFFFFF",
                     padding: "1rem 1.5rem",
                     fontSize: "0.8125rem",
                     letterSpacing: "0.1em",
@@ -345,14 +345,14 @@ export default function Contact() {
                   }}
                   onMouseEnter={(e) => {
                     if (loading) return;
-                    e.currentTarget.style.background = "#C8A15A";
-                    e.currentTarget.style.borderColor = "#C8A15A";
-                    e.currentTarget.style.color = "#0E0E0E";
+                    e.currentTarget.style.background = "#8b7fe8";
+                    e.currentTarget.style.borderColor = "#8b7fe8";
+                    e.currentTarget.style.color = "#000000";
                   }}
                   onMouseLeave={(e) => {
                     e.currentTarget.style.background = "none";
-                    e.currentTarget.style.borderColor = "rgba(200,161,90,0.35)";
-                    e.currentTarget.style.color = "#F5F5F5";
+                    e.currentTarget.style.borderColor = "rgba(139,127,232,0.35)";
+                    e.currentTarget.style.color = "#FFFFFF";
                   }}
                 >
                   <span>{loading ? "Sending…" : "Get in Touch"}</span>
@@ -375,7 +375,7 @@ export default function Contact() {
               style={{
                 fontSize: "clamp(1rem, 2.5vw, 1.75rem)",
                 fontWeight: 600,
-                color: "#F5F5F5",
+                color: "#FFFFFF",
                 lineHeight: 1.4,
                 marginBottom: "0.5rem",
               }}
@@ -402,7 +402,7 @@ export default function Contact() {
                   alignItems: "center",
                   justifyContent: "space-between",
                   padding: "1.25rem 0",
-                  borderBottom: "1px solid rgba(200,161,90,0.1)",
+                  borderBottom: "1px solid rgba(139,127,232,0.12)",
                   textDecoration: "none",
                   transition: "padding-left 0.3s",
                   gap: "1rem",
@@ -442,12 +442,12 @@ export default function Contact() {
                     >
                       {label}
                     </p>
-                    <p className="font-body" style={{ fontSize: "0.9375rem", color: "#F5F5F5", fontWeight: 500 }}>
+                    <p className="font-body" style={{ fontSize: "0.9375rem", color: "#FFFFFF", fontWeight: 500 }}>
                       {handle}
                     </p>
                   </div>
                 </div>
-                <RiArrowRightUpLine size={15} style={{ color: "#C8A15A", flexShrink: 0 }} />
+                <RiArrowRightUpLine size={15} style={{ color: "#8b7fe8", flexShrink: 0 }} />
               </a>
             ))}
           </motion.div>

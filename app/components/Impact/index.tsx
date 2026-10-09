@@ -18,14 +18,14 @@ function StatCard({ stat }: { stat: typeof stats[0] }) {
       className="group"
       style={{
         background: '#181818',
-        border: '1px solid rgba(200,161,90,0.1)',
+        border: '1px solid rgba(139,127,232,0.15)',
         padding: '2.5rem 2rem',
         textAlign: 'center',
         position: 'relative',
         overflow: 'hidden',
         transition: 'border-color 0.3s',
       }}
-      whileHover={{ borderColor: 'rgba(200,161,90,0.3)' }}
+      whileHover={{ borderColor: 'rgba(139,127,232,0.35)' }}
     >
       <div
         style={{
@@ -45,7 +45,7 @@ function StatCard({ stat }: { stat: typeof stats[0] }) {
         style={{
           fontSize: 'clamp(2.5rem, 5vw, 3.5rem)',
           fontWeight: 700,
-          color: '#C8A15A',
+          color: '#8b7fe8',
           lineHeight: 1,
           marginBottom: '0.75rem',
           letterSpacing: '-0.01em',
@@ -56,7 +56,7 @@ function StatCard({ stat }: { stat: typeof stats[0] }) {
       <p
         className="font-body"
         style={{
-          color: '#A1A1A1',
+          color: '#c0c6cc',
           fontSize: '0.8rem',
           letterSpacing: '0.1em',
           textTransform: 'uppercase',
@@ -94,7 +94,7 @@ export default function Impact() {
             style={{
               fontSize: 'clamp(2rem, 5vw, 3.75rem)',
               fontWeight: 700,
-              color: '#F5F5F5',
+              color: '#FFFFFF',
               lineHeight: 1.15,
             }}
           >

@@ -34,7 +34,7 @@ function VentureCard({
         display: 'flex',
         flexDirection: 'column',
         background: 'linear-gradient(160deg, #161616 0%, #101010 100%)',
-        border: `1px solid ${hovered ? 'rgba(200,161,90,0.4)' : 'rgba(200,161,90,0.12)'}`,
+        border: `1px solid ${hovered ? 'rgba(139,127,232,0.4)' : 'rgba(139,127,232,0.15)'}`,
         padding: '2rem',
         position: 'relative',
         transform: hovered ? 'translateY(-6px)' : 'translateY(0)',
@@ -46,25 +46,25 @@ function VentureCard({
         style={{
           width: '4.5rem',
           height: '4.5rem',
-          border: '1px solid rgba(200,161,90,0.35)',
+          border: '1px solid rgba(139,127,232,0.35)',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
           position: 'relative',
           marginBottom: '2rem',
-          background: 'rgba(200,161,90,0.03)',
+          background: 'rgba(139,127,232,0.05)',
         }}
       >
         {/* Corner accents — the maker's-mark motif used across the site */}
-        <span style={{ position: 'absolute', top: 5, left: 5, width: 10, height: 10, borderTop: '1px solid #C8A15A', borderLeft: '1px solid #C8A15A', opacity: 0.7 }} />
-        <span style={{ position: 'absolute', bottom: 5, right: 5, width: 10, height: 10, borderBottom: '1px solid #C8A15A', borderRight: '1px solid #C8A15A', opacity: 0.7 }} />
+        <span style={{ position: 'absolute', top: 5, left: 5, width: 10, height: 10, borderTop: '1px solid #8b7fe8', borderLeft: '1px solid #8b7fe8', opacity: 0.7 }} />
+        <span style={{ position: 'absolute', bottom: 5, right: 5, width: 10, height: 10, borderBottom: '1px solid #8b7fe8', borderRight: '1px solid #8b7fe8', opacity: 0.7 }} />
 
         {venture.logo ? (
           <Image src={venture.logo} alt={`${venture.name} logo`} width={44} height={44} style={{ objectFit: 'contain' }} />
         ) : (
           <span
             className="font-heading"
-            style={{ fontSize: '1.5rem', fontWeight: 700, letterSpacing: '0.04em', color: '#C8A15A' }}
+            style={{ fontSize: '1.5rem', fontWeight: 700, letterSpacing: '0.04em', color: '#8b7fe8' }}
           >
             {venture.monogram}
           </span>
@@ -76,13 +76,13 @@ function VentureCard({
         className="font-body"
         style={{ fontSize: '0.62rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: '#6a6a6a', marginBottom: '0.75rem' }}
       >
-        {venture.category} <span style={{ color: '#C8A15A', margin: '0 0.4rem' }}>·</span> {venture.year}
+        {venture.category} <span style={{ color: '#8b7fe8', margin: '0 0.4rem' }}>·</span> {venture.year}
       </div>
 
       {/* ── Name ── */}
       <h3
         className="font-heading"
-        style={{ fontSize: '1.6rem', fontWeight: 700, lineHeight: 1.15, color: hovered ? '#C8A15A' : '#F5F5F5', margin: '0 0 0.9rem', transition: 'color 0.35s' }}
+        style={{ fontSize: '1.6rem', fontWeight: 700, lineHeight: 1.15, color: hovered ? '#8b7fe8' : '#FFFFFF', margin: '0 0 0.9rem', transition: 'color 0.35s' }}
       >
         {venture.name}
       </h3>
@@ -90,7 +90,7 @@ function VentureCard({
       {/* ── Short description ── */}
       <p
         className="font-body"
-        style={{ color: '#A1A1A1', fontSize: '0.9rem', lineHeight: 1.7, margin: 0, flex: 1 }}
+        style={{ color: '#c0c6cc', fontSize: '0.9rem', lineHeight: 1.7, margin: 0, flex: 1 }}
       >
         {venture.blurb}
       </p>
@@ -108,7 +108,7 @@ function VentureCard({
           fontSize: '0.78rem',
           letterSpacing: '0.06em',
           textTransform: 'uppercase',
-          color: hovered ? '#C8A15A' : '#8a8a8a',
+          color: hovered ? '#8b7fe8' : '#8a8a8a',
           textDecoration: 'none',
           transition: 'color 0.35s',
           alignSelf: 'flex-start',
@@ -132,13 +132,13 @@ export default function Ventures() {
       <div className="site-container">
         {/* ── Section header ── */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem' }}>
-          <span style={{ width: '2rem', height: '1px', background: '#C8A15A', flexShrink: 0 }} />
+          <span style={{ width: '2rem', height: '1px', background: '#8b7fe8', flexShrink: 0 }} />
           <motion.span
             initial={{ opacity: 0 }}
             animate={inView ? { opacity: 1 } : {}}
             transition={{ duration: 0.5 }}
             className="font-body"
-            style={{ fontSize: '0.65rem', letterSpacing: '0.22em', color: '#C8A15A', textTransform: 'uppercase' }}
+            style={{ fontSize: '0.65rem', letterSpacing: '0.22em', color: '#8b7fe8', textTransform: 'uppercase' }}
           >
             Ventures
           </motion.span>
@@ -149,7 +149,7 @@ export default function Ventures() {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, ease, delay: 0.1 }}
           className="font-heading"
-          style={{ fontSize: 'clamp(2rem, 3.5vw, 3rem)', fontWeight: 700, color: '#F5F5F5', letterSpacing: '-0.02em', lineHeight: 1.1, margin: '0 0 3.5rem', maxWidth: '20ch' }}
+          style={{ fontSize: 'clamp(2rem, 3.5vw, 3rem)', fontWeight: 700, color: '#FFFFFF', letterSpacing: '-0.02em', lineHeight: 1.1, margin: '0 0 3.5rem', maxWidth: '20ch' }}
         >
           The brands I&apos;ve <span className="text-gradient" style={{ fontStyle: 'italic' }}>built</span>.
         </motion.h2>

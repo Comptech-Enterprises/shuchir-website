@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+NZ+Basic:wght@100..400&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -26,10 +26,8 @@
   --color-accent: var(--accent);
   --color-accent-light: var(--accent-light);
   --color-border: var(--border);
-  --font-heading: 'Poppins', sans-serif;
-  --font-display: 'Poppins', sans-serif;
-  --font-body: 'Roboto', sans-serif;
-  --font-hand: 'Playwrite NZ Basic', cursive;
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
 }
 
 * {
@@ -45,7 +43,7 @@ html {
 body {
   background: var(--bg);
   color: var(--text-primary);
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -70,15 +68,11 @@ body {
 }
 
 .font-heading {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Playfair Display', serif;
 }
 
 .font-body {
-  font-family: 'Roboto', sans-serif;
-}
-
-.font-hand {
-  font-family: 'Playwrite NZ Basic', cursive;
+  font-family: 'Inter', sans-serif;
 }
 
 .text-gradient {

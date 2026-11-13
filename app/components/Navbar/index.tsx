@@ -125,6 +125,7 @@ export default function Navbar() {
               })}
             </ul>
 
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
             {/* CTA */}
             <button
               onClick={() => handleNavClick('#contact')}
@@ -149,7 +150,8 @@ export default function Navbar() {
                 e.currentTarget.style.color = '#8b7fe8';
               }}
             >
-              Get in Touch
+              <span className="nav-cta-full">Get in Touch</span>
+              <span className="nav-cta-short">Contact</span>
             </button>
 
             {/* Mobile toggle */}
@@ -161,6 +163,7 @@ export default function Navbar() {
             >
               {mobileOpen ? <RiCloseLine size={24} /> : <RiMenuLine size={24} />}
             </button>
+            </div>
           </nav>
         </div>
       </motion.header>
@@ -212,11 +215,13 @@ export default function Navbar() {
       <style>{`
         @media (max-width: 767px) {
           .nav-desktop { display: none !important; }
-          .nav-cta { display: none !important; }
           .nav-hamburger { display: flex !important; }
+          .nav-cta { padding: 0.45rem 0.9rem !important; font-size: 0.75rem !important; }
+          .nav-cta-full { display: none; }
         }
         @media (min-width: 768px) {
           .nav-hamburger { display: none !important; }
+          .nav-cta-short { display: none; }
         }
       `}</style>
     </>

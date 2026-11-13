@@ -38,6 +38,7 @@ export default function Navbar() {
       >
         <div className="site-container">
           <nav
+            className="nav-bar"
             style={{
               height: '72px',
               display: 'flex',
@@ -53,7 +54,7 @@ export default function Navbar() {
                 e.preventDefault();
                 window.scrollTo({ top: 0, behavior: 'smooth' });
               }}
-              className="font-heading"
+              className="font-heading nav-logo"
               style={{
                 fontSize: '1.5rem',
                 fontWeight: 700,
@@ -131,23 +132,29 @@ export default function Navbar() {
               onClick={() => handleNavClick('#contact')}
               className="font-body nav-cta"
               style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.75rem',
                 background: 'none',
-                border: '1px solid rgba(139,127,232,0.4)',
-                color: '#8b7fe8',
+                border: '1px solid rgba(139,127,232,0.35)',
+                color: '#FFFFFF',
                 fontSize: '0.8125rem',
-                letterSpacing: '0.06em',
-                padding: '0.625rem 1.5rem',
+                letterSpacing: '0.1em',
+                textTransform: 'uppercase',
+                padding: '0.75rem 1.25rem',
                 cursor: 'pointer',
                 flexShrink: 0,
-                transition: 'all 0.3s',
+                transition: 'all 0.35s',
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.background = '#8b7fe8';
+                e.currentTarget.style.borderColor = '#8b7fe8';
                 e.currentTarget.style.color = '#000000';
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.background = 'none';
-                e.currentTarget.style.color = '#8b7fe8';
+                e.currentTarget.style.borderColor = 'rgba(139,127,232,0.35)';
+                e.currentTarget.style.color = '#FFFFFF';
               }}
             >
               <span className="nav-cta-full">Get in Touch</span>
@@ -216,8 +223,10 @@ export default function Navbar() {
         @media (max-width: 767px) {
           .nav-desktop { display: none !important; }
           .nav-hamburger { display: flex !important; }
-          .nav-cta { padding: 0.45rem 0.9rem !important; font-size: 0.75rem !important; }
+          .nav-cta { padding: 0.5rem 0.8rem !important; font-size: 0.7rem !important; gap: 0.4rem !important; }
           .nav-cta-full { display: none; }
+          .nav-logo { font-size: 1.2rem !important; letter-spacing: 0.06em !important; }
+          .nav-bar { gap: 0.75rem !important; }
         }
         @media (min-width: 768px) {
           .nav-hamburger { display: none !important; }

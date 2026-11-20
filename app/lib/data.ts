@@ -42,7 +42,7 @@ export const ventures: Venture[] = [
       "Anthem is a full-service marketing agency that partners with some of India's biggest brands, both domestic and global, building campaigns and experiences that connect culture and commerce.",
     blurb:
       "A full-service marketing agency partnering with some of India's biggest brands, at home and abroad.",
-    year: '2022',
+    year: '2014',
     image: '/images/suchir.webp',
     monogram: 'AN',
     website: 'https://theanthem.in/',
@@ -92,7 +92,7 @@ export const timelineItems: TimelineItem[] = [
     metric: '$250K seed',
   },
   {
-    year: '2022',
+    year: '2014',
     title: 'Anthem',
     subtitle: 'The Next Chapter',
     description:

@@ -10,7 +10,7 @@ const ease = [0.22, 1, 0.36, 1] as const;
 const ventures = [
   { year: "2013", name: "Food Talk India", url: "https://foodtalk.in/" },
   { year: "2018", name: "Jade Forest", url: "http://jadeforest.in/" },
-  { year: "2022", name: "Anthem", url: "https://theanthem.in/" },
+  { year: "2014", name: "Anthem", url: "https://theanthem.in/" },
 ];
 
 export default function About() {
